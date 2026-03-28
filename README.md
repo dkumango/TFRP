@@ -1,2 +1,19 @@
-# TFRP
-Tensor-Flow Relevance Propagation (TFRP) framework
+## TFRP: TensorFlow Relevance Propagation
+TFRP (TensorFlow Relevance Propagation) is a high-performance, fine-grained Explainable AI (XAI) framework that reformulates the traditional Layer-wise Relevance Propagation (LRP) into a unified automatic differentiation task.
+By leveraging the underlying computational graph of TensorFlow, TFRP provides a mathematically consistent and computationally efficient way to attribute model decisions back to input pixels, ensuring strict adherence to the conservation law across complex neural architectures.
+### Key Features
+◉ Auto-Diff Based Reformulation: Replaces complex heuristic rules with a unified redistribution principle based on the product of input activations ($p_i$) and connection weights ($w_{ij}$), implemented via the automatic differentiation engine.
+◉ Architectural Versatility: Seamlessly supports complex non-linear architectures, including ResNet (Skip-connections), Inception (Parallel branches), and DenseNet (Concatenations), without manual layer-by-layer rule tuning.
+◉ High-Resolution Precision: Achieves exceptional Sparsity (up to 0.929) and Stability ($10^{-5}$ range), delivering clear and noise-free attribution maps compared to standard gradient-based methods.
+◉ Sub-second Inference: Optimized for real-time applications, generating faithful explanations in a single backward pass (0.38s - 0.82s for heavy models).
+
+### Benchmark Results
+TFRP demonstrates superior performance across various quantitative metrics:
+Metric          TFRP (Ours)    Grad-CAM  Guided Backprop  RISE 
+Sparsity        0.879 - 0.929  0.003     0.725            0.141S
+tability        1.3e-05        1.8e-04   1.2e-05          1.5e-01
+Inference Time  < 1.0s         < 0.1s    < 0.1s           > 1.6s
+
+### Citation
+If you find this work useful in your research, please consider citing:
+(Under review)
