@@ -15,11 +15,8 @@ By leveraging the underlying computational graph of TensorFlow, TFRP provides a 
 
 ### Benchmark Results
 TFRP demonstrates superior performance across various quantitative metrics:
-Metric          TFRP (Ours)    Grad-CAM  Guided Backprop  RISE  
-Sparsity        0.879 - 0.929  0.003     0.725            0.141S  
-tability        1.3e-05        1.8e-04   1.2e-05          1.5e-01  
-Inference Time  < 1.0s         < 0.1s    < 0.1s           > 1.6s  
-<img width="700" height="283" alt="image" src="https://github.com/user-attachments/assets/81201f5c-2862-4ba5-806d-2e2cfe46c249" />
+<img width="630" height="255" alt="image" src="https://github.com/user-attachments/assets/81201f5c-2862-4ba5-806d-2e2cfe46c249" />
+(Grad-CAM (GC), Guided Backpropagation (GB), Integrated Gradients (IG), SmoothGrad (SG))  
 
 ### Citation
 If you find this work useful in your research, please consider citing:  
