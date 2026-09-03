@@ -1,0 +1,6 @@
+Method,Deletion (AUC),Insertion (AUC),MuFidelity,Sensitivity (Stability)
+Integrated Gradients,0.069,0.1629,0.1557,0.0709
+SmoothGrad,0.1218,0.111,-0.0141,0.0006
+RISE,0.1113,0.4936,0.4042,3.7466
+LRP (z+),0.06309,0.389468,0.50049,0.004256
+TFRP (Ours),0.096606,0.24348,0.359076,13.411595
