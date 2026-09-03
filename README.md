@@ -15,7 +15,7 @@ By leveraging the underlying computational graph of TensorFlow, TFRP provides a 
 
 ### Benchmark Results
 TFRP demonstrates superior performance across various quantitative metrics:
-<img width="630" height="255" alt="image" src="https://github.com/user-attachments/assets/81201f5c-2862-4ba5-806d-2e2cfe46c249" />
+<img width="630" height="255" alt="image" src="https://github.com/user-attachments/assets/81201f5c-2862-4ba5-806d-2e2cfe46c249" /><br>
 (Grad-CAM (GC), Guided Backpropagation (GB), Integrated Gradients (IG), SmoothGrad (SG))  
 
 ### Citation
