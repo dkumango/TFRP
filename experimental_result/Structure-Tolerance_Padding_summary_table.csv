@@ -1,0 +1,9 @@
+,Model,Method,z_plus,epsilon,alpha_beta,composite
+Structure-Tolerance_Padding,resnet50,LRP,6.57794872210414e-05,0.02557419122333123,0.00014502703295132558,0.17294215077609215
+Structure-Tolerance_Padding,resnet50,TFRP,0.00038434037850947365,0.03970073609368421,0.0011692642919263157,0.0011692642919263157
+Structure-Tolerance_Padding,vgg16,LRP,,,,
+Structure-Tolerance_Padding,vgg16,TFRP,,,,
+Structure-Tolerance_Padding,inception_v3,LRP,,,,
+Structure-Tolerance_Padding,inception_v3,TFRP,,,,
+Structure-Tolerance_Padding,mobilenet_v2,LRP,8.278990671647921e-05,3.120094782241188,0.00018854238687526157,15.040314320458714
+Structure-Tolerance_Padding,mobilenet_v2,TFRP,0.0003368425824315789,3.9800903270947368,0.0007677717080589476,0.0007677717080589476

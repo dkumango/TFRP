@@ -1,0 +1,8 @@
+DeiT-Tiny
+
+================================================================================
+                       Absolute_Error  RCE_Percentage(%)  Leakage_Percentage(%)  Propagation_Continuity  Inference_Time(s)
+Method                                                                                                                    
+Conventional LRP (z+)         9.18354          97.455017              97.455022                1.644844           0.671899
+TFRP Framework (z+)          0.420896           4.390014               3.684199                0.963158           0.342273
+================================================================================

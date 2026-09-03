@@ -1,0 +1,9 @@
+,Model,Method,z_plus,epsilon,alpha_beta,composite
+Structure-Tolerance_Add,resnet50,LRP,29.73497791909978,0.04462362081059223,45.31755394793747,111.35005858631253
+Structure-Tolerance_Add,resnet50,TFRP,1.624073514631579,0.6816406816915789,189.85915613684207,189.85915613684207
+Structure-Tolerance_Add,vgg16,LRP,,,,
+Structure-Tolerance_Add,vgg16,TFRP,,,,
+Structure-Tolerance_Add,inception_v3,LRP,,,,
+Structure-Tolerance_Add,inception_v3,TFRP,,,,
+Structure-Tolerance_Add,mobilenet_v2,LRP,,,,
+Structure-Tolerance_Add,mobilenet_v2,TFRP,,,,
