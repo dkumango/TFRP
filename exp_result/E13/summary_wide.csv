@@ -1,0 +1,14 @@
+library,config,rule,vgg16,resnet50,inception_v3,mobilenet_v2,densenet121,efficientnet_b0,convnext_tiny
+iNNvestigate,documented,z+,1.4e-05,49,97,1e+02,92,NOT_AVAILABLE,NOT_AVAILABLE
+iNNvestigate,documented,SequentialPresetA,27,4.5e+03,8.7e+03,1e+02,39,NOT_AVAILABLE,NOT_AVAILABLE
+TFRP-v1 (published),plain,z+,0.0045,5.3e-05,0.00012,nan,6.3e+03,9.7,CRASH
+TFRP-v2 (revised),plain,z+,2.7e-05,3e-05,3.1e-05,1e+02,0.007,37,0.52
+Zennit,plain (no canonizer),z+,0.00016,6.4e+06,65,3.2e+02,22,1.1e+10,1e+02
+Zennit,documented (VGGCanonizer),z+,0.00016,,,,,,
+Zennit,documented (VGGCanonizer),EpsilonPlusFlat,12,,,,,,
+Zennit,documented (ResNetCanonizer),z+,,0.087,,,,,
+Zennit,documented (ResNetCanonizer),EpsilonPlusFlat,,80,,,,,
+Zennit,documented (SequentialMergeBatchNorm),z+,,,65,3.3e+02,CRASH,1.1e+10,1e+02
+Zennit,documented (SequentialMergeBatchNorm),EpsilonPlusFlat,,,99,97,CRASH,6.7e+02,nan
+Captum,plain,z+ (Alpha1_Beta0),13,1.7e+04,1e+02,CRASH,98,CRASH,CRASH
+Captum,plain (default rules),default,92,6.3e+26,99,CRASH,1.1e+02,CRASH,CRASH

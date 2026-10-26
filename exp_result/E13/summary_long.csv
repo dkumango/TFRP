@@ -1,0 +1,64 @@
+library,config,rule,model,status,n_ok,RCE_median_pct,RCE_q25_pct,RCE_q75_pct,time_median_s,error
+iNNvestigate,documented,z+,vgg16,OK,50,1.3808899139094953e-05,6.939399864298825e-06,2.340106138145616e-05,0.9389004707336426,
+iNNvestigate,documented,SequentialPresetA,vgg16,OK,50,27.40257936514966,21.46436916211811,30.22446473287839,0.5814496278762817,
+iNNvestigate,documented,z+,resnet50,OK,50,48.85641219610074,35.37536517811432,63.27453732465936,0.45447778701782227,
+iNNvestigate,documented,SequentialPresetA,resnet50,OK,50,4471.93403317831,2081.405739147136,8795.025166505244,0.6385985612869263,
+iNNvestigate,documented,z+,inception_v3,OK,50,96.66208811410436,95.7148097206969,97.52252759561145,0.6811732053756714,
+iNNvestigate,documented,SequentialPresetA,inception_v3,OK,50,8658.040910085703,3614.576670151686,15774.840401727035,1.3769418001174927,
+iNNvestigate,documented,z+,mobilenet_v2,OK,50,99.9999723455423,99.99996048850137,99.99998096362862,0.2944892644882202,
+iNNvestigate,documented,SequentialPresetA,mobilenet_v2,OK,50,99.666403046559,99.48599296642304,99.83472922288657,0.45962846279144287,
+iNNvestigate,documented,z+,densenet121,OK,50,92.10316218031005,89.81633572710602,93.83806084308148,0.8616178035736084,
+iNNvestigate,documented,SequentialPresetA,densenet121,OK,50,39.06430138928286,22.86427462428459,59.54120207128565,1.6471753120422363,
+iNNvestigate,documented,z+,efficientnet_b0,NOT_AVAILABLE,0,,,,,model not in keras 2.2.4 applications
+iNNvestigate,documented,SequentialPresetA,efficientnet_b0,NOT_AVAILABLE,0,,,,,model not in keras 2.2.4 applications
+iNNvestigate,documented,z+,convnext_tiny,NOT_AVAILABLE,0,,,,,model not in keras 2.2.4 applications
+iNNvestigate,documented,SequentialPresetA,convnext_tiny,NOT_AVAILABLE,0,,,,,model not in keras 2.2.4 applications
+TFRP-v1 (published),plain,z+,convnext_tiny,CRASH,0,,,,1.9463567733764648,KeyError: 2597213635552
+TFRP-v2 (revised),plain,z+,convnext_tiny,OK,50,0.5188749477398976,0.21663588304028772,1.1048594339783795,2.485236167907715,
+TFRP-v1 (published),plain,z+,densenet121,OK,50,6299.376953125,6297.479248046875,6299.8665771484375,2.4003794193267822,
+TFRP-v2 (revised),plain,z+,densenet121,OK,50,0.0069603962800806,0.00022735595146845,0.014351493949257325,1.7074238061904907,
+TFRP-v1 (published),plain,z+,efficientnet_b0,OK,50,9.701242446899414,5.936377167701721,20.24000549316406,1.6595921516418457,
+TFRP-v2 (revised),plain,z+,efficientnet_b0,OK,50,37.17105797068652,34.92318614025958,39.94117783635272,0.9942959547042847,
+TFRP-v1 (published),plain,z+,inception_v3,OK,50,0.00011520927000671695,2.6543785224930616e-05,0.006488608079962399,3.004854917526245,
+TFRP-v2 (revised),plain,z+,inception_v3,OK,50,3.079706398335274e-05,1.0804349379559146e-05,6.0191845406446474e-05,2.242559313774109,
+TFRP-v1 (published),plain,z+,mobilenet_v2,OK,50,30.35580348968506,11.513526678085327,64.63069534301758,0.9092248678207397,
+TFRP-v2 (revised),plain,z+,mobilenet_v2,OK,50,99.85482949568969,99.82202068963105,99.88999758926556,0.6063863039016724,
+TFRP-v1 (published),plain,z+,resnet50,OK,50,5.258419878373388e-05,2.4317570932907984e-05,8.01931328169303e-05,2.155890941619873,
+TFRP-v2 (revised),plain,z+,resnet50,OK,50,2.9897329357125145e-05,1.386181273090464e-05,5.112541058619503e-05,1.6344883441925049,
+TFRP-v1 (published),plain,z+,vgg16,OK,50,0.00449811271391805,0.002679501078091475,0.0057792288716882,6.050756931304932,
+TFRP-v2 (revised),plain,z+,vgg16,OK,50,2.738249227593773e-05,1.1510149210508447e-05,4.369356186201295e-05,4.13351583480835,
+Zennit,plain (no canonizer),z+,vgg16,OK,50,0.0001613731738232,0.00014374269981902498,0.000186374752700775,1.0576651096343994,
+Zennit,documented (VGGCanonizer),z+,vgg16,OK,50,0.0001613731738232,0.00014374269981902498,0.000186374752700775,1.0880402326583862,
+Zennit,documented (VGGCanonizer),EpsilonPlusFlat,vgg16,OK,50,12.34743401195459,10.373091502670421,14.234536196842146,0.7697880268096924,
+Captum,plain (default rules),default,vgg16,OK,50,91.6282403666727,71.33206077622091,109.87861667589067,0.5134202241897583,
+Captum,plain,z+ (Alpha1_Beta0),vgg16,OK,50,12.986005554308399,6.636410165160292,29.331069477824627,0.7242940664291382,
+Zennit,plain (no canonizer),z+,resnet50,OK,50,6355086.885484999,6349089.757670361,6364025.1682567885,0.49820053577423096,
+Zennit,documented (ResNetCanonizer),z+,resnet50,OK,50,0.087481771751105,0.07924744755827404,0.09823194240134288,0.6783541440963745,
+Zennit,documented (ResNetCanonizer),EpsilonPlusFlat,resnet50,OK,50,80.1737340410078,77.6556495589472,82.12491975269205,0.654441237449646,
+Captum,plain (default rules),default,resnet50,OK,50,6.260407669399723e+26,1.0442690126645145e+26,9.535832387444011e+27,0.38804662227630615,
+Captum,plain,z+ (Alpha1_Beta0),resnet50,OK,50,16813.992542926833,3679.4712370287634,127794.51109256747,0.4160037040710449,
+Zennit,plain (no canonizer),z+,inception_v3,OK,50,64.68031826406613,64.21331629590479,65.06019001896685,0.6290915012359619,
+Zennit,documented (SequentialMergeBatchNorm),z+,inception_v3,OK,50,64.68020552203856,64.21317244611267,65.06004493893457,0.7322913408279419,
+Zennit,documented (SequentialMergeBatchNorm),EpsilonPlusFlat,inception_v3,OK,50,98.59729220654765,98.28968907519987,98.83478900213166,0.7232100963592529,
+Captum,plain (default rules),default,inception_v3,OK,50,98.58688031376613,94.51776751746199,102.83105598791781,0.4933347702026367,
+Captum,plain,z+ (Alpha1_Beta0),inception_v3,OK,50,99.99942747256883,99.99793014646728,99.99996824708415,0.532482385635376,
+Zennit,plain (no canonizer),z+,mobilenet_v2,OK,50,324.2901763046437,168.8009453834883,498.3993129580343,0.24179387092590326,
+Zennit,documented (SequentialMergeBatchNorm),z+,mobilenet_v2,OK,50,326.0449307406378,169.97049281822876,500.9446573680408,0.25418567657470703,
+Zennit,documented (SequentialMergeBatchNorm),EpsilonPlusFlat,mobilenet_v2,OK,50,97.0394765817015,94.91297109700795,98.60080212236086,0.24850809574127192,
+Captum,plain (default rules),default,mobilenet_v2,CRASH,0,,,,0.0235230922698974,"TypeError: Module of type <class 'torch.nn.modules.activation.ReLU6'> has no rule defined and nodefault rule exists for this module type. Please, set a ruleexplicitly for this module and assure that it is approp"
+Captum,plain,z+ (Alpha1_Beta0),mobilenet_v2,CRASH,0,,,,0.0185244083404541,"TypeError: Module of type <class 'torch.nn.modules.activation.ReLU6'> has no rule defined and nodefault rule exists for this module type. Please, set a ruleexplicitly for this module and assure that it is approp"
+Zennit,plain (no canonizer),z+,densenet121,OK,50,21.760805335743648,17.361408196070926,26.03081110548207,0.5794540643692017,
+Zennit,documented (SequentialMergeBatchNorm),z+,densenet121,CRASH,0,,,,0.0030009746551513,RuntimeError: The size of tensor a (32) must match the size of tensor b (96) at non-singleton dimension 0
+Zennit,documented (SequentialMergeBatchNorm),EpsilonPlusFlat,densenet121,CRASH,0,,,,0.0010006427764892,RuntimeError: The size of tensor a (32) must match the size of tensor b (96) at non-singleton dimension 0
+Captum,plain (default rules),default,densenet121,OK,50,112.38641742641195,65.11392396514006,156.7874950389322,0.5299383401870728,
+Captum,plain,z+ (Alpha1_Beta0),densenet121,OK,50,98.12376891892993,97.3767427382219,98.66343747388939,0.5245879888534546,
+Zennit,plain (no canonizer),z+,efficientnet_b0,OK,50,11440948445.412708,6968916850.820848,16457287337.144176,0.30545556545257563,
+Zennit,documented (SequentialMergeBatchNorm),z+,efficientnet_b0,OK,50,11473867083.772068,6984678901.836084,16497531735.587393,0.3232104778289795,
+Zennit,documented (SequentialMergeBatchNorm),EpsilonPlusFlat,efficientnet_b0,OK,50,667.2136828957205,437.172486667581,1278.9774597229286,0.3100384473800659,
+Captum,plain (default rules),default,efficientnet_b0,CRASH,0,,,,0.0282416343688964,"TypeError: Module of type <class 'torch.nn.modules.activation.SiLU'> has no rule defined and nodefault rule exists for this module type. Please, set a ruleexplicitly for this module and assure that it is appropr"
+Captum,plain,z+ (Alpha1_Beta0),efficientnet_b0,CRASH,0,,,,0.0263550281524658,"TypeError: Module of type <class 'torch.nn.modules.activation.SiLU'> has no rule defined and nodefault rule exists for this module type. Please, set a ruleexplicitly for this module and assure that it is appropr"
+Zennit,plain (no canonizer),z+,convnext_tiny,OK,50,99.99999961637656,99.99972997955533,100.00017971884967,0.4965616464614868,
+Zennit,documented (SequentialMergeBatchNorm),z+,convnext_tiny,OK,50,99.99999961637656,99.99972997955533,100.00017971884967,0.4959820508956909,
+Zennit,documented (SequentialMergeBatchNorm),EpsilonPlusFlat,convnext_tiny,OK,50,7.888428723893384e+27,1.8731020946080438e+27,3.1609823494744164e+28,0.3511495590209961,
+Captum,plain (default rules),default,convnext_tiny,CRASH,0,,,,0.038581371307373,"TypeError: Module of type <class 'torchvision.models.convnext.LayerNorm2d'> has no rule defined and nodefault rule exists for this module type. Please, set a ruleexplicitly for this module and assure that it is "
+Captum,plain,z+ (Alpha1_Beta0),convnext_tiny,CRASH,0,,,,0.0295665264129638,"TypeError: Module of type <class 'torchvision.models.convnext.LayerNorm2d'> has no rule defined and nodefault rule exists for this module type. Please, set a ruleexplicitly for this module and assure that it is "
