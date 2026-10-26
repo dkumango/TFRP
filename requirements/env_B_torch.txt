@@ -1,0 +1,11 @@
+# Environment B — Python 3.12.6: Zennit and Captum on the identical PyTorch networks and on torchvision models
+# (CPU wheels: pip install -r env_B_torch.txt --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple)
+torch==2.14.1
+torchvision==0.29.1
+zennit==1.0.0
+captum==0.9.0
+numpy==2.5.2
+pandas==3.0.6
+scipy==1.18.1
+matplotlib==3.11.2
+pillow==12.3.0
