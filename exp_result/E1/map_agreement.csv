@@ -1,0 +1,43 @@
+model,rule,implementation,n,pearson_median,spearman_median
+vgg16,z+,Zennit (canonized),50,0.9999999942605315,0.9999999504687014
+vgg16,z+,Zennit (not canonized),50,0.9999999942605315,0.9999999504687014
+vgg16,z+,Captum,50,0.02829867898443549,0.719748715957673
+vgg16,z+,iNNvestigate,50,0.9999999200095508,0.9999999082415123
+vgg16,epsilon,Zennit (canonized),50,0.9999987784126967,0.9999954339800752
+vgg16,epsilon,Captum,50,0.40909812326219874,0.4106206083924614
+vgg16,epsilon,iNNvestigate,50,0.9999998256288009,0.9999997480579254
+vgg16,alpha_beta,Zennit (canonized),50,0.9999999932435593,0.9999998586562583
+vgg16,alpha_beta,iNNvestigate,50,0.9999999503711484,0.9999999253839893
+vgg16,composite,Zennit (canonized),50,0.9999999802691244,0.999999870835808
+vgg16,composite,iNNvestigate,50,0.9999999495593105,0.9999999106143528
+resnet50,z+,Zennit (canonized),50,0.9999998363314068,0.999999831718404
+resnet50,z+,Zennit (not canonized),50,0.7838374979770788,0.8867904891491243
+resnet50,z+,Captum,50,0.04817047828871081,0.6057108930833561
+resnet50,z+,iNNvestigate,50,0.8842268059321445,0.8579313305923799
+resnet50,epsilon,Zennit (canonized),0,,
+resnet50,epsilon,Captum,0,,
+resnet50,epsilon,iNNvestigate,0,,
+resnet50,alpha_beta,Zennit (canonized),50,0.9999652547491814,0.9999088161526095
+resnet50,alpha_beta,iNNvestigate,27,0.2997956960449978,0.17219348280039345
+resnet50,composite,Zennit (canonized),50,0.9999664654139868,0.9999243082199951
+resnet50,composite,iNNvestigate,50,0.18057507306990062,0.0018557437288039633
+inception_v3,z+,Zennit (canonized),50,0.9999999860943558,0.9999999657301588
+inception_v3,z+,Zennit (not canonized),50,0.9999999863252796,0.9999999774205874
+inception_v3,z+,Captum,50,0.03731092073816135,0.8096831997595157
+inception_v3,z+,iNNvestigate,50,0.8445066954519003,0.8449974607976254
+inception_v3,epsilon,Zennit (canonized),0,,
+inception_v3,epsilon,Captum,0,,
+inception_v3,epsilon,iNNvestigate,0,,
+inception_v3,alpha_beta,Zennit (canonized),50,0.9999999886720907,0.9999998134925216
+inception_v3,alpha_beta,iNNvestigate,0,,
+inception_v3,composite,Zennit (canonized),50,0.9999999862503458,0.9999998443394662
+inception_v3,composite,iNNvestigate,50,0.3227269316503228,0.14062385842028935
+mobilenet_v2,z+,Zennit (canonized),50,0.9999853462352271,0.9998576890457183
+mobilenet_v2,z+,Zennit (not canonized),50,0.9827092349979989,0.9664748093913409
+mobilenet_v2,z+,iNNvestigate,0,,
+mobilenet_v2,epsilon,Zennit (canonized),0,,
+mobilenet_v2,epsilon,iNNvestigate,0,,
+mobilenet_v2,alpha_beta,Zennit (canonized),50,0.999993057472045,0.9999026581556602
+mobilenet_v2,alpha_beta,iNNvestigate,47,0.0023936434810087745,0.0011100166191367646
+mobilenet_v2,composite,Zennit (canonized),50,0.9999910421507662,0.9998998848676361
+mobilenet_v2,composite,iNNvestigate,39,0.00034170444059327266,-0.0014884210200993382

@@ -1,0 +1,4 @@
+vgg16: max |logit diff| vs keras 3 = 5.72e-06
+resnet50: max |logit diff| vs keras 3 = 9.06e-06
+inception_v3: max |logit diff| vs keras 3 = 1.19e-05
+mobilenet_v2: max |logit diff| vs keras 3 = 1.67e-05
