@@ -1,0 +1,8 @@
+model,residual_add,gate_mul,avgpool,normalisation,nested_model,op_types_rule,op_types_pass,op_types_rejected,manual_sites
+vgg16,0,0,0,0,0,"Conv2D,Dense,Flatten,MaxPooling2D",,,0
+resnet50,16,0,1,53,0,"Add,Conv2D,Dense,GlobalAveragePooling2D,MaxPooling2D,ZeroPadding2D","Activation,BatchNormalization",,0
+inception_v3,0,0,10,94,0,"AveragePooling2D,Concatenate,Conv2D,Dense,GlobalAveragePooling2D,MaxPooling2D","Activation,BatchNormalization",,0
+mobilenet_v2,10,0,1,52,0,"Add,Conv2D,Dense,DepthwiseConv2D,GlobalAveragePooling2D,ZeroPadding2D","BatchNormalization,ReLU",,0
+densenet121,0,0,4,121,0,"AveragePooling2D,Concatenate,Conv2D,Dense,GlobalAveragePooling2D,MaxPooling2D,ZeroPadding2D","Activation,BatchNormalization",,0
+efficientnet_b0,9,16,17,49,0,"Add,Conv2D,Dense,DepthwiseConv2D,GlobalAveragePooling2D,Multiply,Reshape,ZeroPadding2D","Activation,BatchNormalization,Dropout,Normalization,Rescaling",,0
+convnext_tiny,18,0,1,23,4,"Add,Conv2D,Dense,GlobalAveragePooling2D","Activation,LayerNormalization,LayerScale,Normalization",,0
